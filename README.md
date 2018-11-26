@@ -17,3 +17,16 @@
  4.1    | [__Todo MVC__]                                  
  4.2    | [__与san-router结合实现Todo MVC__]                   
  4.3    | [__结合san-router与san-store优化Todo MVC__]                                            
+## Build Setup
+
+``` bash
+
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# then open localhost:8081 to see the fruit
+
+```

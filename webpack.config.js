@@ -2,7 +2,10 @@ const path = require('path');
 
 const express = require('express');
 var app = express();
+
+// 设置静态文件存放目录
 app.use('/static', express.static(__dirname + '/static'));
+
 // 引入 mini-css-extract-plugin 插件 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -17,10 +20,10 @@ const webpack = require('webpack');
 // 引入打包html文件
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// 引入HappyPack插件 
+// 引入HappyPack插件, 多线程解析编译文件
 const HappyPack = require('happypack');
 
-// 引入 ParallelUglifyPlugin 插件
+// 引入 ParallelUglifyPlugin 插件, 多线程压缩文件
 const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin');
 
 // 引入 webpack-deep-scope-plugin 优化
